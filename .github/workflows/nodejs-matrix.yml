@@ -13,7 +13,7 @@ jobs:
     
     strategy:
       matrix:
-        os: [ubuntu-latest, debian-latest, centos-latest]   # เพิ่ม OS ต่างๆ
+        os: [ubuntu-latest, debian-11, centos-8]   # เพิ่ม OS ต่างๆ
         node-version: [18.x, 20.x, 22.x]                    # Node.js เวอร์ชันที่ต้องการทดสอบ
 
     steps:
