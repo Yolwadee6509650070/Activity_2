@@ -9,11 +9,11 @@ on:
 jobs:
   build:
 
-    runs-on: Ubantu-runner, ฏDebian-runner
+    runs-on: self-hosted
     
     strategy:
       matrix:
-        os: [ubuntu-latest, debian-latest ]   # เพิ่ม OS ต่างๆ
+        os: [ubuntu-latest, debian-latest, centos-latest ]   # เพิ่ม OS ต่างๆ
         node-version: [18.x, 20.x, 22.x]                    # Node.js เวอร์ชันที่ต้องการทดสอบ
 
     steps:
